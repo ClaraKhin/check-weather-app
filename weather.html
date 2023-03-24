@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="src/weather.css" />
+    <link rel="stylesheet" href="/src/bootstrap.min.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h1>Check Weather For Fun</h1>
+          <div id="request-info" class="row">
+            <div class="col-6">
+              <form class="dataRequest" id="searchCity">
+                <input
+                  type="text"
+                  class="city"
+                  id="city"
+                  name="city"
+                  placeholder="𝓢𝓮𝓪𝓻𝓬𝓱 𝓐 𝓒𝓲𝓽𝔂"
+                />
+                <button type="submit" class="search">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="13"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                    />
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="col-6">
+              <button class="currentLocation" id="current-location-button">
+                Current
+              </button>
+            </div>
+          </div>
+
+          <div id="info" class="row">
+            <div class="col-6">
+              <h5>Yangon, Myanmar</h5>
+              <h6>𝓢𝓪𝓽𝓾𝓻𝓭𝓪𝔂</h6>
+              <span class="h6" id="description">Mostly Sunny</span>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span>km/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="currentCondition">
+            <img src="/images/weatherSun1.png" alt="weatherSun" />
+            <span class="temperature" id="temperature"></span
+            ><span class="units">°C</span>
+          </div>
+
+          <p class="footer">
+            Coded By <a href="https://github.com/ClaraKhin" class="Me">𝕶𝖍𝖎𝖓</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="/src/index.js"></script>
+  </body>
+</html>
