@@ -14,7 +14,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 40%;
+  width: 53%;
 }
 .card-body {
   height: 35rem;
@@ -83,10 +83,11 @@ li {
 .footer {
   text-align: right;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 200;
   color: #886003;
-  position: relative;
-  top: 19%;
+  position: absolute;
+  left: 67%;
+  bottom: 5%;
 }
 .Me {
   text-decoration: none;
