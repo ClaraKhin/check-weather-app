@@ -91,5 +91,15 @@ li {
 }
 .Me {
   text-decoration: none;
-  color: #c08b12;
+  color: #9e7513;
+}
+.Me:hover {
+  color: #886003;
+}
+.openSourceCode {
+  text-decoration: none;
+  color: #9e7513;
+}
+.openSourceCode:hover {
+  color: #886003;
 }
