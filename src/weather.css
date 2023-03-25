@@ -3,14 +3,14 @@
   margin: 0 auto;
 }
 body {
-  background-image: url(/images/GreenClean.jpg);
+  background-image: url(/images/sky1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .card {
   margin: 50px auto;
-  background-image: url(/images/aestheticWeatherCover.jpg);
+  background-image: url(/images/sky2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
