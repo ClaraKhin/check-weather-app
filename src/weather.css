@@ -9,12 +9,12 @@ body {
   background-repeat: no-repeat;
 }
 .card {
-  margin: 75px auto;
+  margin: 50px auto;
   background-image: url(/images/aestheticWeatherCover.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 53%;
+  width: 60%;
 }
 .card-body {
   height: 35rem;
@@ -86,8 +86,8 @@ li {
   font-weight: 200;
   color: #886003;
   position: absolute;
-  left: 67%;
-  bottom: 5%;
+  left: 64%;
+  bottom: 4%;
 }
 .Me {
   text-decoration: none;
