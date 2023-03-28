@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 body {
-  background-image: url(/images/sky1.jpg);
+  background-image: url(/images/clearsky2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,10 +14,11 @@ body {
 }
 .card {
   margin: 30px auto;
-  background-image: url(/images/sky2.jpg);
+  background-image: url(/images/clearsky.jpg);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  border-style: hidden;
+  border-radius: 30px;
 }
 .card-body {
   height: 35rem;
@@ -50,7 +51,7 @@ h1 {
 }
 
 .city {
-  width: 60%;
+  width: 50%;
   border-radius: 6px;
   font-size: 15px;
   text-align: center;
@@ -92,6 +93,7 @@ li {
 }
 .tempUnit {
   text-decoration: none;
+  color: black;
 }
 .footer {
   text-align: right;
