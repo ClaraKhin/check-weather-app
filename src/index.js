@@ -27,10 +27,11 @@ let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
 function displayWeatherCondition(response) {
+  celciusTemperature = response.data.main.temp;
+
   document.querySelector("h5").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  document.querySelector("#temperature").innerHTML =
+    Math.round(celciusTemperature);
 
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
@@ -77,3 +78,24 @@ let button = document.querySelector("#current-location-button");
 button.addEventListener("click", getCurrentLocation);
 
 searchCity("Yangon");
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  celcius.classList.remove("active");
+  fahrenheit.classList.add("active");
+  let temperature = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+  temperature.innerHTML = Math.round(fahrenheitTemperature);
+}
+function displayCelciusTemperature(event) {
+  event.preventDefault();
+  celcius.classList.add("active");
+  fahrenheit.classList.remove("active");
+  let temperature = document.querySelector("#temperature");
+  temperature.innerHTML = Math.round(celciusTemperature);
+}
+let fahrenheit = document.querySelector("#fahrenheit-link");
+fahrenheit.addEventListener("click", displayFahrenheitTemperature);
+
+let celcius = document.querySelector("#celcius-link");
+celcius.addEventListener("click", displayCelciusTemperature);
