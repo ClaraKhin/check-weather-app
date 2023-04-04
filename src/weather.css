@@ -9,7 +9,7 @@ body {
   background-repeat: no-repeat;
 }
 .wrapper {
-  max-width: 800px;
+  max-width: 700px;
   margin: 30px auto;
 }
 .card {
@@ -21,7 +21,7 @@ body {
   border-radius: 30px;
 }
 .card-body {
-  height: 35rem;
+  height: 33rem;
 }
 h1 {
   text-align: center;
@@ -95,6 +95,24 @@ li {
 .weather-temperature .active {
   color: rgb(33, 33, 33);
   cursor: default;
+}
+.weather-forecast {
+  margin-top: 50px;
+  text-align: center;
+  color: #000;
+}
+.weather-forecast img {
+  width: 64px;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.9;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.9;
+}
+.weather-forecast-temperature-max {
+  font-size: 13px;
 }
 
 .footer {
