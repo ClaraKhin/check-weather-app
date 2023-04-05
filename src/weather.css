@@ -9,7 +9,7 @@ body {
   background-repeat: no-repeat;
 }
 .wrapper {
-  max-width: 700px;
+  max-width: 600px;
   margin: 30px auto;
 }
 .card {
@@ -21,7 +21,7 @@ body {
   border-radius: 30px;
 }
 .card-body {
-  height: 33rem;
+  height: 35rem;
 }
 h1 {
   text-align: center;
@@ -105,11 +105,12 @@ li {
   width: 64px;
 }
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 13px;
   opacity: 0.9;
 }
 .weather-forecast-temperature-min {
   opacity: 0.9;
+  font-size: 13px;
 }
 .weather-forecast-temperature-max {
   font-size: 13px;
