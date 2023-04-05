@@ -81,26 +81,26 @@ button.addEventListener("click", getCurrentLocation);
 
 searchCity("Yangon");
 
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-  celcius.classList.remove("active");
-  fahrenheit.classList.add("active");
-  let temperature = document.querySelector("#temperature");
-  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
-  temperature.innerHTML = Math.round(fahrenheitTemperature);
-}
-function displayCelciusTemperature(event) {
-  event.preventDefault();
-  celcius.classList.add("active");
-  fahrenheit.classList.remove("active");
-  let temperature = document.querySelector("#temperature");
-  temperature.innerHTML = Math.round(celciusTemperature);
-}
-let fahrenheit = document.querySelector("#fahrenheit-link");
-fahrenheit.addEventListener("click", displayFahrenheitTemperature);
+// function displayFahrenheitTemperature(event) {
+//   event.preventDefault();
+//   celcius.classList.remove("active");
+//   fahrenheit.classList.add("active");
+//   let temperature = document.querySelector("#temperature");
+//   let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+//   temperature.innerHTML = Math.round(fahrenheitTemperature);
+// }
+// function displayCelciusTemperature(event) {
+//   event.preventDefault();
+//   celcius.classList.add("active");
+//   fahrenheit.classList.remove("active");
+//   let temperature = document.querySelector("#temperature");
+//   temperature.innerHTML = Math.round(celciusTemperature);
+// }
+// let fahrenheit = document.querySelector("#fahrenheit-link");
+// fahrenheit.addEventListener("click", displayFahrenheitTemperature);
 
-let celcius = document.querySelector("#celcius-link");
-celcius.addEventListener("click", displayCelciusTemperature);
+// let celcius = document.querySelector("#celcius-link");
+// celcius.addEventListener("click", displayCelciusTemperature);
 
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
@@ -116,10 +116,10 @@ function displayForecast(response) {
   let forecastHtml = `<div class="row">`;
 
   forecast.forEach(function (forecastDay, index) {
-    if(index < 6) {
-   forecastHtml =
-     forecastHtml +
-     `
+    if (index < 6) {
+      forecastHtml =
+        forecastHtml +
+        `
                 <div class="col-2">
                   <div class="weather-forecast-date">${formatDay(
                     forecastDay.dt
@@ -140,7 +140,6 @@ function displayForecast(response) {
                   </div>
                 </div>`;
     }
- 
   });
   forecastHtml = forecastHtml + `</div>`;
   forecastElement.innerHTML = forecastHtml;
